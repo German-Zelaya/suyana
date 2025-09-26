@@ -1,0 +1,42 @@
+// android/build.gradle
+
+buildscript {
+    // Intenta con una versión de Kotlin más nueva. Dado el error, empieza con 1.9.22 o superior.
+    // La biblioteca de Firebase fue compilada con metadatos 2.1.0.
+    // Para usar KGP 2.0.0, AGP debe ser >= 7.1.3
+    // Para usar KGP 1.9.22, AGP puede ser un poco más antiguo, ej: 7.3.0
+    ext.kotlin_version = '2.1.0' // Prueba esto primero. Si falla, prueba '2.0.0'
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Asegúrate de que esta versión de AGP sea compatible con tu kotlin_version
+        // Si usas kotlin_version = '2.0.0', quizás necesites AGP '7.4.2' o superior.
+        // Si usas kotlin_version = '1.9.22', AGP '7.3.0' debería estar bien.
+        classpath 'com.android.tools.build:gradle:7.3.0' // O la versión que tenías/necesitas
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // Si usas Firebase, es probable que también necesites google-services
+        classpath 'com.google.gms:google-services:4.4.2' // O la última versión
+    }
+}
+
+// El resto de tu archivo (allprojects, etc.) va aquí debajo
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

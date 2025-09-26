@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "636292268320",
+    "project_id": "suyana-cdef0",
+    "storage_bucket": "suyana-cdef0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636292268320:android:0715b8d756ef8dcf2fd745",
+        "android_client_info": {
+          "package_name": "com.example.suyana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636292268320-ft9r2e9k15eka53u6109qlptmtg71r2j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.suyana",
+            "certificate_hash": "a2557f5588641aa3ae52c9899ac2917f2ee879bc"
+          }
+        },
+        {
+          "client_id": "636292268320-vugj8p2upjpu5dk8pdv8kavgqip6ocaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSPdRxRGDA33uQGl8XvkxzhllKKWEZdzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636292268320-vugj8p2upjpu5dk8pdv8kavgqip6ocaf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "636292268320-dpir012eb5vjetegpk796c61l79mouuh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.suyana"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
