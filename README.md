@@ -1,8 +1,8 @@
-# Suyana - Sistema de Gestión de Órdenes de Trabajo suyana:1-39 
+# Suyana - Sistema de Gestión de Órdenes de Trabajo suyana: 
 
 ## Descripción General
 
-Suyana es una aplicación Flutter multiplataforma para la gestión de órdenes de trabajo con integración Firebase. suyana:8-16  El sistema implementa control de acceso basado en roles, soportando usuarios regulares y administradores.
+Suyana es una aplicación Flutter multiplataforma para la gestión de órdenes de trabajo con integración Firebase.El sistema implementa control de acceso basado en roles, soportando usuarios regulares y administradores.
 
 ## Arquitectura del Sistema
 
@@ -37,14 +37,14 @@ graph TB
 ## Funcionalidades Principales
 
 ### Autenticación
-- **Email/Contraseña**: Autenticación tradicional suyana:19-70 
-- **Google Sign-In**: Autenticación OAuth con creación automática de documentos de usuario suyana:72-127 
-- **Registro de Usuarios**: Creación de nuevas cuentas suyana:129-160 
+- **Email/Contraseña**: Autenticación tradicional suyana: 
+- **Google Sign-In**: Autenticación OAuth con creación automática de documentos de usuario suyana:
+- **Registro de Usuarios**: Creación de nuevas cuentas suyana: 
 
 ### Gestión de Órdenes de Trabajo
 
 #### Creación y Edición
-La pantalla `CreateOrderScreen` maneja tanto la creación como la edición de órdenes: suyana:659-678 
+La pantalla `CreateOrderScreen` maneja tanto la creación como la edición de órdenes: suyana: 
 
 **Campos principales:**
 - Información del cliente (nombre, dirección, teléfono)
@@ -54,7 +54,7 @@ La pantalla `CreateOrderScreen` maneja tanto la creación como la edición de ó
 - Observaciones y autorización
 
 #### Visualización de Órdenes
-La pantalla `ViewOrdersScreen` proporciona diferentes experiencias según el rol: suyana:380-420 
+La pantalla `ViewOrdersScreen` proporciona diferentes experiencias según el rol: suyana:
 
 **Para Administradores:**
 - Selector de usuario para ver órdenes de cualquier usuario
@@ -67,13 +67,13 @@ La pantalla `ViewOrdersScreen` proporciona diferentes experiencias según el rol
 - Funcionalidades básicas de edición
 
 ### Generación de PDF
-El sistema incluye generación automática de reportes PDF: suyana:30-84 
+El sistema incluye generación automática de reportes PDF: suyana:
 
 **Características del PDF:**
 - Encabezado con logo de la empresa
 - Información completa del cliente y vehículo
 - Detalles de repuestos y mano de obra
-- Totales y firmas suyana:241-273 
+- Totales y firmas suyana:
 
 ## Modelos de Datos
 
@@ -125,7 +125,7 @@ Servicio central que maneja todas las operaciones de datos: suyana:361-397
 - `getAllUsers()`: Gestión de usuarios (solo admin)
 
 ### PdfService
-Servicio especializado en generación de documentos PDF: suyana:10-28 
+Servicio especializado en generación de documentos PDF: suyana:
 
 ## Control de Acceso Basado en Roles
 
